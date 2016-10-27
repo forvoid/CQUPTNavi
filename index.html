@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>重邮上网快捷导航</title>
+  <meta charset="utf-8" content="text/html">
+  <script language="javascript">
+    function goBaidu(){
+
+      var search = "https://www.baidu.com/s?wd=+"+document.searchform.search.value;
+      alert(search);
+      window.location.href=search;
+    }
+    function goGoogle1(){
+
+      var search = "http://www.acgn.ren/search?q=+"+document.searchform.search.value;
+      alert(search);
+      window.location.href=search;
+    }
+    function goGoogle2(){
+
+      var search = "http://www.acgn.ren/search?q=+"+document.searchform.search.value;
+      alert(search);
+      window.location.href=search;
+    }
+  </script>
+</head>
+<body>
+  <div>
+    <form name="searchform">
+  搜索：
+  <input type="text" name="search" value="请输入你想搜的内容">
+  <input type="button" value="百度" onclick="goBaidu()">
+  <input type="button" value="谷歌镜像1" onclick="goGoogle1()">
+  <input type="button" value="谷歌镜像2" onclick="goGoogle2()">
+  <input type="button" value="百度" onclick="goBaidu()">
+</form>
+  <div>
+</body>
+</html>
