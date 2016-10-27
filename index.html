@@ -15,14 +15,15 @@
     <center>
       <h2 style="color:blue">重邮科学导航</h2>
       <div class="main">
-    <form name="searchform">
- <label >搜索：<input class="main_input" type="text" name="search" placeholder="请输入你想搜的内容"></label></br>
-  <input class="main_button" type="button" value="百度" onclick="goBaidu()">
-  <input class="orange"type="button" value="谷歌镜像1" onclick="goGoogle1()">
-  <input type="button" value="谷歌镜像2" onclick="goGoogle2()">
-  <input type="button" value="云盘" onclick="goYunPan()">
-  <input type="button" value="GitHub" onclick="goGitHub()">
-</form>
+    <!-- <form name="searchform" action="https://www.baidu.com/s?"> -->
+ <label >搜索：<input id="search"class="main_input" type="text" name="wd=+" placeholder="请输入你想搜的内容"
+   onkeypress="getKey()" onkeydown="getKey()"/></label></br>
+  <input  id="search"class="main_button" type="button" value="百度" onclick="goBaidu()">
+  <input id="search"class="orange"type="button" value="谷歌镜像1" onclick="goGoogle1()">
+  <input id="search" type="button" value="谷歌镜像2" onclick="goGoogle2()">
+  <input id="search"type="button" value="云盘" onclick="goYunPan()">
+  <input id="search"type="button" value="GitHub" onclick="goGitHub()">
+<!-- </form> -->
 </div>
 </center>
   <div>
