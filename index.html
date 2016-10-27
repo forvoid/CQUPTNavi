@@ -6,23 +6,24 @@
   <meta charset="utf-8" content="text/html">
   <script src="search.js"></script>
 
-<style type="text/css">
-
+<!-- <link rel=”stylesheet” type=”text/css” href=”index.css”> -->
+<link rel="stylesheet" type="text/css" href="index.css">
 </style>
 </head>
-<body>
+<body >
   <div>
     <center>
       <h2 style="color:blue">重邮科学导航</h2>
+      <div class="main">
     <form name="searchform">
-<p style="color:yellow">  搜索：
-  <input type="text" name="search" placeholder="请输入你想搜的内容"></p>
-  <input type="button" value="百度" onclick="goBaidu()">
-  <input type="button" value="谷歌镜像1" onclick="goGoogle1()">
+ <label >搜索：<input class="main_input" type="text" name="search" placeholder="请输入你想搜的内容"></label></br>
+  <input class="main_button" type="button" value="百度" onclick="goBaidu()">
+  <input class="orange"type="button" value="谷歌镜像1" onclick="goGoogle1()">
   <input type="button" value="谷歌镜像2" onclick="goGoogle2()">
   <input type="button" value="云盘" onclick="goYunPan()">
   <input type="button" value="GitHub" onclick="goGitHub()">
 </form>
+</div>
 </center>
   <div>
 </body>
