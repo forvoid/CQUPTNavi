@@ -1,0 +1,10 @@
+body  {
+	/*作者：bing壁纸（来着 mcc1o8闵聪的图片获取）*/
+  background-image:url(https://congm.in/bing.php);
+  z-index: -1;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}

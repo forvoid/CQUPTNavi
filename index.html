@@ -1,38 +1,29 @@
 <html>
 <head>
   <title>重邮上网快捷导航</title>
+  <!-- author:forvoid -- java后台开发 无聊经常需要科学上网和资料查询直接写一个小型的网站，方便使用。也希望前端大神勿喷，爱抚萌新。-->
+  <!-- 来着北邮大兄弟的启发，http://byr.wiki -->
   <meta charset="utf-8" content="text/html">
-  <script language="javascript">
-    function goBaidu(){
+  <script src="search.js"></script>
 
-      var search = "https://www.baidu.com/s?wd=+"+document.searchform.search.value;
-      alert(search);
-      window.location.href=search;
-    }
-    function goGoogle1(){
+<style type="text/css">
 
-      var search = "http://www.acgn.ren/search?q=+"+document.searchform.search.value;
-      alert(search);
-      window.location.href=search;
-    }
-    function goGoogle2(){
-
-      var search = "http://www.acgn.ren/search?q=+"+document.searchform.search.value;
-      alert(search);
-      window.location.href=search;
-    }
-  </script>
+</style>
 </head>
 <body>
   <div>
+    <center>
+      <h2 style="color:blue">重邮科学导航</h2>
     <form name="searchform">
-  搜索：
-  <input type="text" name="search" value="请输入你想搜的内容">
+<p style="color:yellow">  搜索：
+  <input type="text" name="search" placeholder="请输入你想搜的内容"></p>
   <input type="button" value="百度" onclick="goBaidu()">
   <input type="button" value="谷歌镜像1" onclick="goGoogle1()">
   <input type="button" value="谷歌镜像2" onclick="goGoogle2()">
-  <input type="button" value="百度" onclick="goBaidu()">
+  <input type="button" value="云盘" onclick="goYunPan()">
+  <input type="button" value="GitHub" onclick="goGitHub()">
 </form>
+</center>
   <div>
 </body>
 </html>
