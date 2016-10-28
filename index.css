@@ -23,7 +23,18 @@ body  {
 
 }
 
-
+::-webkit-input-placeholder { /* WebKit browsers */
+color:rgba(13, 12, 14, 0.59);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color:rgba(13, 12, 14, 0.59);
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+color:rgba(13, 12, 14, 0.59);
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+color:rgba(13, 12, 14, 0.59);
+}
 .main_input{
 	position:relative;
 	bottom:5px;
@@ -42,7 +53,7 @@ body  {
 	background-color:hsla(0,0%,100%,.1);
 	-webkit-transition:all .5s;
 	transition:all .5s;
-	font-size: 20px;
+	font-size: 25px;
 	color: #fcfcfc;
 
 	}
@@ -58,31 +69,33 @@ body  {
   50% { background-color: #91bd09; -webkit-box-shadow: 0 0 18px #91bd09; }
   to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
 }
-.main_button{
-	-webkit-animation-name: greenPulse;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
+.bottom{
+	position: absolute;
+	top: 95%;
+	left: 50%;
+	margin-left: -90px;
+	font-size: 20px;
+	color: #fcfcfc;
+	font-family:Helvetica Neue,Helvetica,Arial,Microsoft YaHei,sans-serif;
 }
-.orange {
+.a.color{color:rgba(0,0,0,0.25); text-decoration:none;font-weight:bold;}/*链接设置*/
+/*.a.color:visited{color:#3399CC; text-decoration:none;font-weight:bold;}/*访问过的链接设置*/*/
+.a.color:hover{color:#CF0000; text-decoration:underline;font-weight:bold;}/*鼠标放上的链接设置*/
+.button_fanwei{
 
-	color: #fef4e9;
-	border: solid 1px #da7c0c;
-	background: #f78d1d;
-	background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
-	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+	padding-left: 100px;
 }
-.orange:hover {
-	background: #f47c20;
-	background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
-	background: -moz-linear-gradient(top,  #f88e11,  #f06015);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+.a.font{
+	color: #fcfcfc;
 }
-.orange:active {
-	color: #fcd3a5;
-	background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
-	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+.navi_div{
+	position: absolute;
+	top: 61%;
+	left: 50%;
+	margin-left: -320px;
+	font-size: 20px;
+	color: #fcfcfc;
+	font-family:Helvetica Neue,Helvetica,Arial,Microsoft YaHei,sans-serif;
 }
 .button, .button:visited {
 	background: #222 url(overlay.png) repeat-x;
@@ -109,20 +122,23 @@ body  {
 
 	.large.button, .large.button:visited{
 		font-size: 14px;
-		padding: 8px 14px 9px; }
+		padding: 8px 14px 9px;
+	}
 
-	.super.button, .super.button:visited 			{
-		 font-size: 34px;
-		padding: 8px 14px 9px; }
-		.pink.button, .magenta.button:visited	{ background-color: #e22092; }
+		.pink.button, .magenta.button:visited	{ background-color: rgba(59,180,242,.1); }
 	.pink.button:hover					{ background-color: #c81e82; }
-	.green.button, .green.button:visited	{ background-color: #91bd09; }
-	.green.button:hover				        { background-color: #749a02; }
-	.red.button, .red.button:visited		{ background-color: #e62727; }
-	.red.button:hover					{ background-color: #cf2525; }
-	.orange.button, .orange.button:visited	{ background-color: #ff5c00; }
+/*google绿*/
+	.green.button, .green.button:visited	{ background-color: rgba(59,180,242,.1); }
+	.green.button:hover				        { background-color: #34a853; }
+/*/胖次灰*/
+	.grep.button, .grep.button:visited		{ background-color:rgba(59,180,242,.1); }
+	.grep.button:hover					{ background-color: #353535; }
+
+	.orange.button, .orange.button:visited	{ background-color: rgba(59,180,242,.1); }
 	.orange.button:hover				{ background-color: #d45500; }
-	.blue.button, .blue.button:visited   	        { background-color: #2981e4; }
-	.blue.button:hover					{ background-color: #2575cf; }
-	.yellow.button, .yellow.button:visited	{ background-color: #ffb515; }
-	.yellow.button:hover				{ background-color: #fc9200; }
+/*baidu蓝*/
+	.blue.button, .blue.button:visited   	        { background-color: rgba(59,180,242,.1); }
+	.blue.button:hover					{ background-color: #3388ff; }
+/*/github紫*/
+	.purple.button, .purple.button:visited	{ background-color: rgba(59,180,242,.1); }
+	.purple.button:hover				{ background-color: #9469e9; }

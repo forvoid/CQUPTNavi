@@ -1,8 +1,8 @@
 <html>
+<!-- author:forvoid -- java后台开发 无聊经常需要科学上网和资料查询直接写一个小型的网站，方便使用。也希望前端大神勿喷，爱抚萌新。-->
+<!-- 来着北邮大兄弟的启发，http://byr.wiki -->
 <head>
   <title>重邮上网快捷导航</title>
-  <!-- author:forvoid -- java后台开发 无聊经常需要科学上网和资料查询直接写一个小型的网站，方便使用。也希望前端大神勿喷，爱抚萌新。-->
-  <!-- 来着北邮大兄弟的启发，http://byr.wiki -->
   <meta charset="utf-8" content="text/html">
   <script src="search.js"></script>
 
@@ -12,22 +12,33 @@
 </head>
 <body >
   <div>
-    <center>
-      <h2 style="color:blue">重邮科学导航</h2>
       <div class="main">
+        <center>
     <!-- <form name="searchform" action="https://www.baidu.com/s?"> -->
- <label >搜索：<input id="search"class="main_input" type="text" name="wd=+" placeholder="请输入你想搜的内容"
+ <label >搜索：<input id="search"class="main_input" type="text" name="wd=+" placeholder="请输入你想搜的内容(默认百度搜索)"
    onkeypress="getKey()" onkeydown="getKey()"/></label></br>
-  <input  id="search"class="main_button" type="button" value="百度" onclick="goBaidu()">
-  <input id="search"class="orange"type="button" value="谷歌镜像1" onclick="goGoogle1()">
-  <input id="search" class="button super pink "type="button" value="谷歌镜像2" onclick="goGoogle2()">
-  <input id="search"type="button" value="云盘" onclick="goYunPan()">
-  <input id="search"type="button" value="GitHub" onclick="goGitHub()">
+   <p></p>
+   <div class="button_fanwei">
+  <input  id="search"class="button large blue " type="button" value="百度" onclick="goBaidu()">
+  <input id="search"class="button large green "type="button" value="谷歌镜像1" onclick="goGoogle1()">
+  <!-- <input id="search" class="button large pink "type="button" value="谷歌镜像2" onclick="goGoogle2()"> -->
+  <input id="search"class="button large grep "type="button" value="云盘" onclick="goYunPan()">
+  <input id="search"class="button large purple "type="button" value="GitHub" onclick="goGitHub()">
+</div>
 <!-- </form> -->
-</div>
-<div style="margin-top:10%;">@forvoid
-</div>
 </center>
+</div>
+<div class="navi_div">
+  快捷导航：&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://cqupt.congm.in/"><font color=#fcfcfc>内网外入</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.bilibili.com/" class="a font">bilibili</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.cqupt.edu.cn/" class="a font">重邮官网</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://tieba.baidu.com/f?ie=utf-8&kw=%E9%87%8D%E5%BA%86%E9%82%AE%E7%94%B5%E5%A4%A7%E5%AD%A6"  class="a font">重邮贴吧</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://hongyan.cqupt.edu.cn/web/"  class="a font">网址大全</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+<div class="bottom">
+  <a href="http://forvoid.github.io" class="a color">@ forvoid</a>
+  <a href="https://github.com/forvoid/CQUPTNavi" class="a color">@ 网站源码</a>
+</div>
 
 </body>
 </html>
