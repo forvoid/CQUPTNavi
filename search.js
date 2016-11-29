@@ -57,7 +57,7 @@ function goYunPan(){
 }
 function goGitHub(){
 
-  var search = "https://github.com/search?q=+"+document.searchform.search.value;
+  var search = "https://github.com/search?q=+"+document.getElementById('search').value;
   // alert(search);
   window.location.href=search;
 }
